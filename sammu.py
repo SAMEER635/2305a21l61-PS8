@@ -1,5 +1,7 @@
 import streamlit as st
 import math
+    # Title of the app
+st.title("2305a21l61-PS08")
 
 # Function to calculate R1 and X1
 def Tran_Eff(VSC, ISC, WSC):
@@ -10,13 +12,16 @@ def Tran_Eff(VSC, ISC, WSC):
 
 # Streamlit app
 def main():
-    # Title of the app
-    st.title("2305a21l61-PS08")
 
+col1,col2=st.columns(2)
+
+with col1:
     # User inputs
-    VSC = st.number_input("Enter VSC:", value=0.0)
-    ISC = st.number_input("Enter ISC:", value=0.0)
-    WSC = st.number_input("Enter WSC:", value=0.0)
+    VSC = st.number_input("Enter VSC:", value=100.0)
+    ISC = st.number_input("Enter ISC:", value=100.0)
+    WSC = st.number_input("Enter WSC:", value=100.0)
+
+with col2
 
     # Calculate and display results when the user presses the button
     if st.button("Calculate"):
